@@ -25,7 +25,8 @@ new_cart = cart
 coupons.each do |coupon|
     itemwc = coupon[:item]
    coupnum = coupon[:num]
-   
+   if cart.include?(itemwc) && cart[itemwc][:count] >= coupnum
+
 end
 # applied_coupons={}
 #    cart.each do |items|
