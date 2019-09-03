@@ -27,7 +27,7 @@ cart["#{item}W/COUPON"] =  {price: coupon[:cost], clearance:cart[item][:clearanc
 cart[item][:count] -= coupone[:num]
 elsif coupon[:item][:count] >= coupon[:num] && cart["#{item}W/COUPON"]
 cart["#{item} W/COUPON"][:count] += coupon[:num]
-cart[:]
+cart[item]
     end
   end
 end
