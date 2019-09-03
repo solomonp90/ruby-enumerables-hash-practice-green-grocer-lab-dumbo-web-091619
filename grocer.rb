@@ -21,7 +21,8 @@ end
 
  def apply_coupons(cart, coupons)
 return cart if coupons == []
-new_cart
+new_cart = cart
+
 end
 # applied_coupons={}
 #    cart.each do |items|
