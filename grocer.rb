@@ -48,7 +48,7 @@ end
    # code here
 cart.keys.each do|name|
   if name[:clearance]
-    name[:price] = (cart[name][:price]*0.80).round
+    name[:price] = (cart[name][:price]*0.80).round(2)
   end
  end
  cart
