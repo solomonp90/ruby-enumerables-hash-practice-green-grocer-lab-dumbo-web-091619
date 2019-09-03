@@ -49,6 +49,7 @@ end
    new_hash = {}
   cart.each do|name,properties|
 if properties[:clearance]
+  new_hash[:price]
 
 
  end
