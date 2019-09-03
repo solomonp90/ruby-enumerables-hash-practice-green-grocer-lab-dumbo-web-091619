@@ -24,7 +24,7 @@ return cart if coupons == []
 new_cart = cart
 coupons.each do |coupon|
   c_item = coupon[:item]
-  c_val = coupon[:value]
+  c_num = coupon[:num]
 end
 # applied_coupons={}
 #    cart.each do |items|
