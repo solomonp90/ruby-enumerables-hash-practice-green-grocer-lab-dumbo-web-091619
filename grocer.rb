@@ -30,7 +30,22 @@ new_cart[c_name][:count] -= c_num
 if new_cart.has_key?("#{c_name} W/COUPON")
        new_cart["#{c_name} W/COUPON"][:count] += coupon[:num]
 
-end
+     else
+       new_cart["#{c_name} W/COUPON"] = {
+         :price => (coupon[:cost] / coupon[:num]),
+         :clearance => new_cart[c_name][:clearance],
+         :count => coupon[:num]
+       }
+
+      end
+
+    end
+
+  end
+
+   new_cart
+
+end	end
 # applied_coupons={}
 #    cart.each do |items|
 
