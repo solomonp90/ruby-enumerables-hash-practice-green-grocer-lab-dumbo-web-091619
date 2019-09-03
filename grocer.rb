@@ -50,6 +50,7 @@ cart.keys.each do|name|
   if name[:clearance]
     name[:price] = (cart[name][:price]*0.8)
  end
+end
 
 
  def checkout(cart, coupons)
