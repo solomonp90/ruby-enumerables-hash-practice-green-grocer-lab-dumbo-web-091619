@@ -48,7 +48,7 @@ end
    # code here
 cart.keys.each do|name|
   if name[:clearance]
-    name[:price] = (cart[name][:price])
+    name[:price] = (cart[name][:price]*)
  end
 
  def checkout(cart, coupons)
