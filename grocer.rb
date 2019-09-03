@@ -30,6 +30,7 @@ cart["#{item} W/COUPON"][:count] += coupon[:num]
 cart[item][:count] -= coupon[:num]
     end
   end
+  cart
 end
 # applied_coupons={}
 #    cart.each do |items|
