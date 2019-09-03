@@ -21,7 +21,7 @@ end
 
  def apply_coupons(cart, coupons)
 return cart if coupons == []
-new_cart = cart
+applied_cart = cart
 coupons.each do |coupon|
     itemwc = coupon[:item]
    coupnum = coupon[:num]
