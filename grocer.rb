@@ -26,14 +26,14 @@ coupons.each do |coupon|
     itemwc = coupon[:item]
    coupnum = coupon[:num]
    if cart.include?(itemwc) && cart[itemwc][:count] >= coupnum
-applied_cart[c_name][:count] -= c_num
-if applied_cart.has_key?("#{c_name} W/COUPON")
-       applied_cart["#{c_name} W/COUPON"][:count] += coupon[:num]
+applied_cart[itemwc][:count] -= c_num
+if applied_cart.has_key?("#{itemwc} W/COUPON")
+       applied_cart["#{itemwc} W/COUPON"][:count] += coupon[:num]
 
      else
-       applied_cart["#{c_name} W/COUPON"] = {
+       applied_cart["#{itemwc} W/COUPON"] = {
          :price => (coupon[:cost] / coupon[:num]),
-         :clearance => applied_cart[c_name][:clearance],
+         :clearance => applied_cart[itemwc][:clearance],
          :count => coupon[:num]
        }
       end
