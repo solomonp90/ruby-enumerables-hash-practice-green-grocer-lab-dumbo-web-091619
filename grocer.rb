@@ -48,7 +48,7 @@ end
    # code here
    new_hash = {}
   cart.each do|name,properties|
-if properties
+if properties[:clearance]
 
 
  end
