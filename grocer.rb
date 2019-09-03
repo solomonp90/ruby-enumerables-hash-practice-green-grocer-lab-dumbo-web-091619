@@ -26,7 +26,7 @@ coupons.each do |coupon|
     itemwc = coupon[:item]
    coupnum = coupon[:num]
    if cart.include?(itemwc) && cart[itemwc][:count] >= coupnum
-applied_cart[itemwc][:count] -= c_num
+applied_cart[itemwc][:count] -= coupnum
 if applied_cart.has_key?("#{itemwc} W/COUPON")
        applied_cart["#{itemwc} W/COUPON"][:count] += coupon[:num]
 
